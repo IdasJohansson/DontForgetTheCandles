@@ -31,7 +31,7 @@ namespace DontForgetTheCandles.Method
 
                     /*
                     //FUNGERAR EJ ATT HA EN ELSE HÄR FÖR OM INTE ID'T ÄR 100 SOM LIGGER FÖRST I LISTAN SÅ KÖRS ÄNDÅ ELSE, HUR LÖSER MAN FELHANTERING FÖR FELINMATADE SIFFROR?
-                    // SKRIVER MAN IN FEl SIFFROR NU SÅ SKICKAS MAN ÄNDÅ TILL MAINMENU JUST NU EFTERSOM DEN LIGGER I STARTSCREEN CASE 1. 
+                    // SKRIVER MAN IN FEl SIFFROR NU SÅ SKICKAS MAN ÄNDÅ TILL MAINMENU EFTERSOM DEN METODEN LIGGER I STARTSCREEN CASE 1. 
                     else
                     {
                         Console.Clear();
