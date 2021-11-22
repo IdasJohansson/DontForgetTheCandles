@@ -56,12 +56,10 @@ namespace DontForgetTheCandles.Method
                     break;
                 case 3:
                     // Metod för counter som adderar inköpta ljus till användaren
-                    // Funkar inte om man använder en av de initiala användarna.. då tar den upp felmeddelandet från loginmethod? Men fungerar om man skapar en ny användare
                     CurrentUser.current.AddBoughtCandle(); // Måste gå via CurrentUser.current för att det ska registreras på den inloggade användaren. 
                     break;
                 case 4:
                     // Metod för visa inloggad användares profil
-                    // Funkar inte om man använder en av de initiala användarna.. då tar den upp felmeddelandet från loginmethod? Men fungerar om man skapar en ny användare
                     CurrentUser.current.PrintCurrentUser();
                     break;
                 case 5:

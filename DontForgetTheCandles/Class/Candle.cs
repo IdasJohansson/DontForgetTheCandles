@@ -50,10 +50,10 @@ namespace DontForgetTheCandles
             {
                 Console.WriteLine();
                 Console.WriteLine("Candle registerd by: {0}", candle.ByUser);
-                Console.WriteLine("Candle lighted: {0}", candle.CandleLighted);
+                Console.WriteLine("Candle lighted: {0}", candle.CandleLighted.ToString("yyyy-MM-dd HH:mm")); // Strängformatering så att man använder 24 timmarsklocka inte AM/PM
                 Console.WriteLine("Room: {0}", candle.Room);
                 Console.WriteLine("Burn hours: {0}", candle.BurnHours);
-                Console.WriteLine("Candle will burn out: {0}", candle.LightOut);
+                Console.WriteLine("Candle will burn out: {0}", candle.LightOut.ToString("yyyy-MM-dd HH:mm")); // Strängformatering så att man använde 24 timmarsklocka inte AM/PM
                 Console.WriteLine();
                 Console.WriteLine("-----------------------");
             }

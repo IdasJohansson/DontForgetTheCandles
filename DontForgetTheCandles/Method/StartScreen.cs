@@ -5,6 +5,7 @@ namespace DontForgetTheCandles.Method
 {
     public class StartScreen
     {
+
         public static void InitialUsers()
         {
             User user = new User(id: 100, name: "Anna", age: 10, city: "Stockholm", nrOfLights: 1, boughtCandle: 5); // La in paramenternamnen bara som en reminder

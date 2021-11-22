@@ -14,7 +14,7 @@ namespace DontForgetTheCandles.Method
                 Console.WriteLine();
                 string byUser = CurrentUser.current.Name;
                 DateTime candleLighted = DateTime.Now;
-                Console.WriteLine("Candle lighted: {0}", candleLighted);
+                Console.WriteLine("Candle lighted: {0}", candleLighted.ToString("yyyy-MM-dd HH:mm")); // Strängformatering så att man använder 24 timmarsklocka inte AM/PM);
                 Console.WriteLine("By user: {0}", byUser);
 
                 Console.Write("Enter room: ");
@@ -24,7 +24,7 @@ namespace DontForgetTheCandles.Method
                 double burnHours = Convert.ToDouble(Console.ReadLine());
 
                 DateTime lightOut = candleLighted.AddHours(burnHours);
-                Console.WriteLine("Candle will burn out: {0}", lightOut);
+                Console.WriteLine("Candle will burn out: {0}", lightOut.ToString("yyyy-MM-dd HH:mm")); // Strängformatering så att man använder 24 timmarsklocka inte AM/PM);
 
                 new Candle(candleLighted: candleLighted, byUser: byUser, room: room, burnHours: burnHours, lightOut: lightOut);
             }
