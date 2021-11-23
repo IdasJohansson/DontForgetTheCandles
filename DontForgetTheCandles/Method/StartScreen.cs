@@ -64,7 +64,6 @@ namespace DontForgetTheCandles.Method
                 case 1:
                     // Metod för login 
                     CurrentUser.current = LogIn.LogInMethod();
-                    // Även om man skriver in felanvändarid med siffror så kommer man vidare till mainmenu just nu eftersom metoden ligger här: 
                     MainMenu.MainMenuMethod();
                     break;
                 case 2:

@@ -14,7 +14,7 @@ namespace DontForgetTheCandles.Method
                 Console.ForegroundColor = ConsoleColor.DarkYellow; // Byter färg på texten till gul
                 Console.Write(text[i]);
                 System.Threading.Thread.Sleep(delay);
-
+               
                 // För att hoppa över animationen och få texten utskriven direkt genom att trycka på enter
                 if (Console.KeyAvailable)
                 {
