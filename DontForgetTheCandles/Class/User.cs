@@ -7,7 +7,7 @@ namespace DontForgetTheCandles
 {
     public class User
     {
-        // Klassen innehåller: Fields, Properties, Lista, Konstruktor
+        // Klassen innehåller: Fields, Properties, Lista, Konstruktor, metoder
 
         // Fields, info om users
         private int _id; 
