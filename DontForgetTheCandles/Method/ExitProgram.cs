@@ -26,6 +26,8 @@ namespace DontForgetTheCandles.Method
                     }
                 }
             }
+            // Tvingar programmet att avsluta så att det inte fastnar någonstans i felhanteringen... :)
+            Environment.Exit(-1);
         }
     }
 }
