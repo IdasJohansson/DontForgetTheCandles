@@ -84,7 +84,7 @@ namespace DontForgetTheCandles
                 Console.WriteLine("Age: {0}", user.Age);
                 Console.WriteLine("City: {0}", user.City);
                 Console.WriteLine("Lighted candels: {0}", user.NrOfLights);
-                Console.WriteLine("Bought candles: {0}", user.BoughtCandle);
+                Console.WriteLine("Purchased candles: {0}", user.BoughtCandle);
                 Console.WriteLine();
                 Console.WriteLine("-----------------------");
             }
@@ -101,7 +101,7 @@ namespace DontForgetTheCandles
             Console.Clear(); 
             BoughtCandle++;
             Console.WriteLine();
-            Console.WriteLine("You have added {0} candle to list of bought candles.", BoughtCandle);
+            Console.WriteLine("You have added {0} candle to list of purchased candles.", BoughtCandle);
             Console.WriteLine("Press any key to return to Main Menu");
             Console.ReadKey();
             Console.Clear(); 
