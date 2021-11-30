@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using DontForgetTheCandles.Method;
-using DontForgetTheCandles.Class; 
+using DontForgetTheCandles.Class;
+using System.Linq;
 
 namespace DontForgetTheCandles
 {
@@ -108,6 +109,47 @@ namespace DontForgetTheCandles
             MainMenu.MainMenuMethod(); 
         }
 
+        // Använder LINQ
+        public static void SearchUser() // För att söka efter användare enligt namn
+        {
+            Console.Clear();
+            Console.Write("Enter a name: ");
+            string userInput = Console.ReadLine();
+            if (String.IsNullOrEmpty(userInput)) // Om det är en tom textsträng skrivs nedan ut. 
+            {
+                Console.WriteLine("Input is empty, press a key and try again!");
+                Console.ReadKey();
+                SearchUser();
+            }
+            string userInputToUpper = Char.ToUpper(userInput[0]) + userInput.Substring(1); // Om man skriver med liten bokstav ändras det till stor bokstav så att det matchar stavnigen i listan.  
+
+            var userName = users.Where(name => name.Name == userInputToUpper);
+            foreach (var item in userName)
+            {
+                if (userInputToUpper == item.Name)
+                {
+                    
+                    Console.WriteLine($"{userInputToUpper} is a registered User.");
+                    Console.WriteLine("Press a key and return to main menu.");
+                    Console.ReadKey();
+                    Console.Clear(); 
+                    MainMenu.MainMenuMethod(); 
+                }
+            }
+            Console.Clear();
+            ConsoleColor prevColor = Console.ForegroundColor; // Sparar nuvarande textfärg i variablen prevColor
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine("\n* * * * * * * * * * * * * * * *");
+            Console.WriteLine("!ERROR!");
+            Console.WriteLine($"{userInputToUpper} is not a valid username.");
+            Console.WriteLine("Press a key and try again :)(:");
+            Console.WriteLine("* * * * * * * * * * * * * * * *");
+            Console.ForegroundColor = prevColor;
+            Console.ReadKey();
+            Console.Clear();
+            SearchUser(); 
+
+        }
 
     }
 }

@@ -20,7 +20,8 @@ namespace DontForgetTheCandles.Method
             4) SHOW LOGGED IN USER DETAILS
             5) EDIT LOGGED UN USER DETAILS
             6) SHOW LIST OF ALL USERS
-            7) EXIT PROGRAM");
+            7) SEARCH FOR USER BY NAME
+            8) EXIT PROGRAM");
 
 
             try
@@ -71,9 +72,12 @@ namespace DontForgetTheCandles.Method
                     User.PrintUsers();
                     break;
                 case 7:
-                    // Avslutar programmet
-                    ExitProgram.EndMessage(); 
+                    User.SearchUser();
                     break; 
+                case 8:
+                    // Avslutar programmet
+                    ExitProgram.EndMessage();
+                    break;
                 default: // Om userInput är en siffra som inte finns i menyvalet/casen
                     Console.Clear();
                     ConsoleColor prevColor = Console.ForegroundColor; // Sparar nuvarande textfärg i variablen prevColor

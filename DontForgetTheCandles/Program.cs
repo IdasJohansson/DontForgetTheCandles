@@ -21,7 +21,11 @@ namespace DontForgetTheCandles
             StartScreen.InitialUsers();
             StartScreen.InitialCandels();
 
+            
             StartScreen.StartMenu();
+            
+
+         
 
 
 
